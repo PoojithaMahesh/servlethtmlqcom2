@@ -21,4 +21,12 @@
   <url-pattern>/login</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  <servlet-name>sel</servlet-name>
+  <servlet-class>studenthtml.controller.SelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>sel</servlet-name>
+  <url-pattern>/select</url-pattern>
+  </servlet-mapping>
 </web-app>

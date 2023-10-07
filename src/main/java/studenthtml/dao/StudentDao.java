@@ -27,5 +27,13 @@ public class StudentDao {
 		Query query=entityManager.createQuery("Select u from Student u");
 		return query.getResultList();
 	}
+
+	public Student selectStudentById(int id) {
+		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("pooji");
+		EntityManager entityManager=entityManagerFactory.createEntityManager();
+		Student student=entityManager.find(Student.class, id);
+		return student;
+		
+	}
 	
 }
